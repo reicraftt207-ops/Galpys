@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galpys</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #e6f2ee;
+      line-height: 1.6;
+      background:
+        radial-gradient(circle at 75% 60%, #0f7a63 0%, transparent 45%),
+        radial-gradient(circle at 15% 90%, #0a4d3f 0%, transparent 40%),
+        #050a0a;
+      background-attachment: fixed;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px 40px;
+    }
+    header img { width: 55px; border-radius: 14px; }
+    nav { display: flex; gap: 10px; flex-wrap: wrap; }
+    nav a {
+      color: #2fe0b8;
+      border: 1px solid #2fe0b8;
+      padding: 8px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav a:hover { background: #2fe0b8; color: #050a0a; }
+    .hero { text-align: center; padding: 70px 20px 50px; }
+    .hero h1 { font-size: 48px; margin: 0 0 15px; color: white; }
+    .hero h1 span { color: #2fe0b8; }
+    .hero p { max-width: 650px; margin: 0 auto 30px; font-size: 18px; }
+    .caixa {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      max-width: 550px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 40px;
+      padding: 6px 6px 6px 25px;
+      color: #666;
+      text-align: left;
+    }
+    .botao {
+      background: #a78bfa;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .botao:hover { background: #8b6cf0; }
+    section { max-width: 900px; margin: 0 auto; padding: 50px 20px; text-align: center; }
+    section > p { max-width: 750px; margin: 0 auto 30px; }
+    h2 { color: #2fe0b8; font-size: 30px; margin-top: 0; }
+    .cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(47,224,184,0.3);
+      border-radius: 16px;
+      padding: 25px;
+      width: 250px;
+    }
+    .card img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; }
+    .card h3 { color: white; margin: 10px 0 5px; }
+    .card p { margin: 8px 0; }
+    .preco { color: #2fe0b8; font-size: 22px; font-weight: bold; }
+    footer { text-align: center; padding: 30px; font-size: 14px; opacity: 0.7; }
+    @media (max-width: 600px) {
+      header { padding: 15px 20px; }
+      .hero h1 { font-size: 34px; }
+      .caixa { flex-direction: column; border-radius: 24px; padding: 20px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo Galpys">
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#historia">História</a>
+      <a href="#valores">Valores</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Conheça o <span>Galpys</span></h1>
+    <p>Aprenda jogando, evolua estudando!</p>
+    <div class="caixa">
+      <span>Experimente o nosso aplicativo agora</span>
+      <a class="botao" href="https://galpys2108.base44.app">Acessar o app</a>
+    </div>
+  </div>
+
+  <section id="sobre">
+    <h2>Tema e objetivo</h2>
+    <p>Desenvolvimento de um aplicativo educacional que utiliza inteligência artificial e jogos para auxiliar os estudantes na aprendizagem.</p>
+    <p>Escolhemos esse tema pois vai facilitar os estudos, tornando a aprendizagem mais divertida, interativa e acessível para estudantes do Ensino Fundamental ao 3º ano do Ensino Médio, além de facilitar as aulas pois tem ajuda para os professores.</p>
+
+    <h2>Apresentação da empresa</h2>
+    <p>O Galpys é um projeto de aplicativo educacional que busca tornar os estudos mais divertidos e interativos por meio da tecnologia, dos jogos e da inteligência artificial.</p>
+  </section>
+
+  <section id="historia">
+    <h2>Nossa história</h2>
+    <p>O Galpys surgiu com a ideia de ajudar pessoas que têm dificuldades para estudar e professores que estão sobrecarregados com suas tarefas do dia a dia. Percebemos que muitos estudantes enfrentam dificuldades para compreender os conteúdos e acabam perdendo o interesse pelos estudos, enquanto muitos professores precisam lidar com diversas responsabilidades e pouco tempo para preparar suas aulas.</p>
+    <p>Pensando nisso, criamos o Galpys, um aplicativo educacional que utiliza inteligência artificial e jogos para tornar a aprendizagem mais divertida, interativa e acessível. Nosso objetivo é ajudar os estudantes a compreender melhor os conteúdos, respeitando o ritmo de aprendizagem de cada um, e oferecer ferramentas que facilitem o trabalho dos professores.</p>
+    <p>Acreditamos que aprender não precisa ser algo cansativo ou complicado. Com a tecnologia, a criatividade e a inovação, queremos transformar a educação em uma experiência mais interessante, ajudando tanto quem aprende quanto quem ensina.</p>
+
+    <h2>Quem está por trás do negócio</h2>
+    <p>Equipe responsável pela criação, desenvolvimento, planejamento e divulgação do projeto Galpys: Davi Aires, Rhyan Liermman, Wendell, Rhuan Sandri e Bárbara.</p>
+  </section>
+
+  <section id="valores">
+    <h2>Valores e diferenciais</h2>
+    <p><b>Valores:</b> educação, inovação, acessibilidade, criatividade e compromisso com a aprendizagem.</p>
+    <p><b>Diferenciais:</b> utilização de inteligência artificial, aprendizagem por meio de jogos, mascote própria e proposta de atender estudantes de diferentes etapas escolares.</p>
+  </section>
+
+  <section id="equipe">
+    <h2>Nossa equipe</h2>
+    <div class="cards">
+      <div class="card">
+        <!-- Quando tiver a foto, coloque aqui: <img src="davi.jpg" alt="Davi"> -->
+        <h3>Davi Aires</h3>
+        <p>Gerente e Desenvolvedor</p>
+      </div>
+      <div class="card">
+        <h3>Rhyan Liermman</h3>
+        <p>Desenvolvedor</p>
+      </div>
+      <div class="card">
+        <h3>Wendell</h3>
+        <p>Marketing</p>
+      </div>
+      <div class="card">
+        <h3>Rhuan Sandri</h3>
+        <p>Designer</p>
+      </div>
+      <div class="card">
+        <h3>Bárbara</h3>
+        <p>Designer</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <h2>Produtos e serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Plano Gratuito</h3>
+        <p class="preco">R$ 0,00</p>
+        <p>Questões básicas por IA<br>Todas as disciplinas<br>Ensino Fundamental e Médio<br>Professor IA limitado</p>
+      </div>
+      <div class="card">
+        <h3>Premium Mensal</h3>
+        <p class="preco">R$ 19,90 /mês</p>
+        <p>Professor IA completo<br>Questões ilimitadas por IA<br>Relatórios de progresso</p>
+      </div>
+      <div class="card">
+        <h3>Premium Anual</h3>
+        <p class="preco">R$ 149,90 /ano</p>
+        <p>Professor IA completo<br>Questões ilimitadas por IA<br>Relatórios de progresso</p>
+      </div>
+    </div>
+    <p><a class="botao" href="https://galpys2108.base44.app">Acessar o aplicativo</a></p>
+  </section>
+
+  <section id="contato">
+    <h2>Onde nos encontrar</h2>
+    <p><b>Endereço:</b> Plataforma digital, acessível pela internet.</p>
+    <p><b>Horário de funcionamento:</b> Acesso online 24 horas por dia, sujeito à disponibilidade da plataforma.</p>
+  </section>
+
+  <footer>© 2026 Galpys. Todos os direitos reservados.</footer>
+
+</body>
+</html>
